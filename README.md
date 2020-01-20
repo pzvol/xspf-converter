@@ -38,21 +38,21 @@ var xspfString =
 		false);  // Whether download gets called
 ```
 
-> Every element in the `array` could be either:
-> - string
->	```javascript
->	"http://example.com/url/to/file"
->	```
-> - or object
->	```javascript
->	{
->		url: "http://example.com/url/to/file",
->		title: "custom_title_name",
->		artist: "artist_name",
->		album: "album_name"
->	}
->	```
->	> properties *except* `url` are selectable
+Every element in the `array` could be either:
+- string
+	```javascript
+	"http://example.com/url/to/file"
+	```
+- or object
+	```javascript
+	{
+		url: "http://example.com/url/to/file",
+		title: "custom_title_name",
+		artist: "artist_name",
+		album: "album_name"
+	}
+	```
+	> properties *except* `url` are selectable
 
 ### 2.3 - Convert an Aria2 input file string
 Works similar to `stringToXSPF`, but option line `out=filename` will be recognized as file title and write to XSPF `<title>` tag
